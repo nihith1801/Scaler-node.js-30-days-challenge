@@ -2,7 +2,7 @@
 const fs=require('fs');
 
 //defining the function
-function readmyfile(filePath)
+function readFileContent(filePath)
 {
     fs.readFile(filePath, 'utf8', (err,data)=>
     {
@@ -20,4 +20,6 @@ function readmyfile(filePath)
 }
 
 
-readmyfile('test.txt')
+readFileContent('file1.txt')
+readFileContent('empty-file.txt')
+readFileContent('non-existent-file.txt')
